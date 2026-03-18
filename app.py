@@ -40,7 +40,7 @@ if st.button('Presiona el boton'):
   st.write('Gracias por presionar')
   veces += 1
 
-if veces == 0;
+if veces == 0:
   st.write('No has presionado aún')
 
 if veces == 2:
