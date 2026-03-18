@@ -1,6 +1,8 @@
 import streamlit as st
 from PIL import Image
 
+veces = 0
+
 st.title("Esta podría ser mi primera app")
 
 st.header("Quizas con ayuda de este sistema podría hacer páginas web, pero... ¿cual es el metodo más común?")
@@ -36,6 +38,16 @@ with col2:
 st.subheader("Uso de Botones")
 if st.button('Presiona el boton'):
   st.write('Gracias por presionar')
+  veces += 1
+
+if veces == 2:
+  st.write('Presionaste dos veces o más. Gracias.')
+
+if veces == 10:
+  st.write('¿porque sigues presionando el boton?')
+
+if veces == 30:
+  st.write('Si presionaste el boton tantas veces, es probable que hayas leido el codigo.')
 else:
   st.write('No has presionado aún')
                   
