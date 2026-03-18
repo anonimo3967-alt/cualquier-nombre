@@ -8,7 +8,7 @@ st.write("Facilmente puedo realizar backend y frontend (o quizas no tan facilmen
 image = Image.open('Tequila.jpeg')
 st.image(image, caption='Tequila Sunset')
 
-texto = st.text_input('Escribe algo', 'Escribe aqui s'il vous plaît')
+texto = st.text_input('Escribe algo', 'Escribe aqui s´il vous plaît')
 
 st.write('El texto escrito es', texto)
 
