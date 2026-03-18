@@ -35,10 +35,6 @@ with col2:
   if comida == 'Burrito':
     st.write('Los burritos son muy ricos, al menos los bien preparados, pero no diria que es mi comida favorita.')
 
-st.subheader("Uso de Botones")
-if st.button('Presiona el boton'):
-  st.write('Gracias por presionar')
-  veces += 1
 
 if veces == 0:
   st.write('No has presionado aún')
@@ -54,6 +50,13 @@ if veces == 3:
 if veces == 4:
   st.write('¿!4 veces¡?')
   veces += 1
+  
+st.subheader("Uso de Botones")
+if st.button('Presiona el boton'):
+  st.write('Gracias por presionar')
+  veces += 1
+
+
 
                   
                     
