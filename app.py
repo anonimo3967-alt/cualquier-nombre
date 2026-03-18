@@ -44,13 +44,16 @@ if veces == 0:
   st.write('No has presionado aún')
 
 if veces == 2:
-  st.write('Presionaste dos veces o más. Gracias.')
+  st.write('Parece que presionaste el boton de nuevo. ¿Por qué harias eso?')
+  veces += 1
 
-if veces == 10:
-  st.write('¿porque sigues presionando el boton?')
+if veces == 3:
+  st.write('Presionaste el boton tres veces...')
+  veces += 1
 
-if veces == 30:
-  st.write('Si presionaste el boton tantas veces, es probable que hayas leido el codigo.')
+if veces == 4:
+  st.write('¿!4 veces¡?')
+  veces += 1
 
                   
                     
