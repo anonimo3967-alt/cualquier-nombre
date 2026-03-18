@@ -1,14 +1,14 @@
 import streamlit as st
 from PIL import Image
 
-st.title("Mi primera App!!")
+st.title("Esta podría ser mi primera app")
 
-st.header("En este espacio comienzo a desarrollar mis aplicaciones para interfaces multimodales")
-st.write("Facilmente puedo realizar backend y frontend")
+st.header("Quizas con ayuda de este sistema podría hacer páginas web, pero... ¿cual es el metodo más común?")
+st.write("Facilmente puedo realizar backend y frontend (o quizas no tan facilmente...)")
 image = Image.open('Tequila.jpeg')
 st.image(image, caption='Tequila Sunset')
 
-texto = st.text_input('Escribe algo', 'Este es mi texto')
+texto = st.text_input('Escribe algo', 'Escribe aqui, s'il vous plaît')
 
 st.write('El texto escrito es', texto)
 
@@ -18,20 +18,20 @@ col1, col2 = st.columns(2)
 
 with col1:
   st.subheader('Esta es la primera columna')
-  st.write('Las interfaces multimodales mejoran la experiencia de usuario')
-  resp = st.checkbox('Estoy de acuerdo')
+  st.write('Me pregunto quien era Homero, el autor de la Odisea, y como invento tantas cosas en su época')
+  resp = st.checkbox('Homero es el autor de la Odisea')
   if resp:
     st.write('Correcto!')
 
 with col2:
   st.subheader('Esta es la segunda columna')
-  modo = st.radio("Que modalidad es la principal en tu interfaz", ('visual', 'auditiva', 'tactil'))
-  if modo == 'visual':
-    st.write('La vista es fundamental para tu interfaz')
-  if modo == 'auditiva':
-    st.write('La audición es fundamental para tu interfaz')
-  if modo == 'tactil':
-    st.write('El tacto es fundamental para tu interfaz')
+  comida = st.radio("¿Que comida prefieres?", ('Pizza', 'Hamburguesa', 'Burrito'))
+  if comida == 'Pizza':
+    st.write('La pizza también es mi comida favorita. Es deliciosisima. Vivan los italianos.')
+  if comida == 'Hamburguesa':
+    st.write('La hamburguesa me encanta, pero prefiero la pizza. Sin embargo, una buena hamburguesa callejera no tiene un igual.')
+  if comida == 'Burrito':
+    st.write('Los burritos son muy ricos, al menos los bien preparados, pero no diria que es mi comida favorita.')
 
 st.subheader("Uso de Botones")
 if st.button('Presiona el boton'):
