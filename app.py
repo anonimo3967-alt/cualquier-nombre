@@ -49,10 +49,19 @@ if st.session_state.counter == 0:
   st.write('No has presionado aún')
 
 if 0 < st.session_state.counter < 5:
-  st.write('huh...')
+  st.write('huh...¿Que pasa si presionas el boton otras veces más?')
 
-if st.session_state.counter >= 5:
-  st.write('Por qué presionas el boton tantas veces?')
+if 5 <= st.session_state.counter <= 10:
+  st.write('Por qué presionas el boton tantas veces? bueno, yo se que te lo pedi, pero... 5 veces es mucho, no? así como 10 veces...')
+
+if 11 <= st.session_state.counter <= 20:
+  st.write('Has presionado el boton más de 10 veces... ¿Que estas haciendo?')
+
+if 21 <= st.session_state.counter <= 30:
+  st.write('Más de 20 veces? enserio? me temo que estes perdiendo tu tiempo...')
+
+if 31 <= st.session_state.counter <= 40:
+  st.write('Ok, si llegaste hasta aqui probablemente leiste el codigo, o te gusta perder el tiempo buscando mensajes inutiles... Este es el ultimo mensaje, por cierto')
 
 st.write('Veces que has presionado el boton:', st.session_state.counter)
 
