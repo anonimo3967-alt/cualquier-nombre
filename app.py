@@ -3,9 +3,6 @@ from PIL import Image
 
 veces = 0
 
-def incrementar():
-  veces += 1
-
 st.title("Esta podría ser mi primera app")
 
 st.header("Quizas con ayuda de este sistema podría hacer páginas web, pero... ¿cual es el metodo más común?")
@@ -38,18 +35,19 @@ with col2:
   if comida == 'Burrito':
     st.write('Los burritos son muy ricos, al menos los bien preparados, pero no diria que es mi comida favorita.')
 
-
+def incrementar():
+  veces += 1 
 
   
 st.subheader("Uso de Botones")
-if st.button('Presiona el boton', on_click=incrementar):
+if st.button('Presiona el boton', on_click= incrementar):
   st.write('Gracias por presionar')
 
 if veces == 0:
   st.write('No has presionado aún')
 
 if 0 < veces < 5:
-  st.write('Has presionado el boton: {veces} veces')
+  st.write('Veces que has presionado el boton:' (veces))
 
 if veces >= 5:
   st.write('Por qué presionas el boton tantas veces?')
