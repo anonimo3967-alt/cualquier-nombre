@@ -54,6 +54,8 @@ if 0 < veces < 5:
 if veces >= 5:
   st.write('Por qué presionas el boton tantas veces?')
 
+st.write(veces)
+
 
 
                   
