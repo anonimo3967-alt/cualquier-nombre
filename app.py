@@ -49,7 +49,7 @@ if st.session_state.counter == 0:
   st.write('No has presionado aún')
 
 if 0 < st.session_state.counter < 5:
-  st.write('Veces que has presionado el boton:' (veces))
+  st.write('huh...')
 
 if st.session_state.counter >= 5:
   st.write('Por qué presionas el boton tantas veces?')
