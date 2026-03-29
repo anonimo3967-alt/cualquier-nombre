@@ -44,6 +44,11 @@ if st.button('Presiona el boton'):
 if veces == 0:
   st.write('No has presionado aún')
 
+if 0 < veces < 5:
+  st.write('Has presionado el boton: {veces} veces')
+
+if veces >= 5:
+
 
 
                   
